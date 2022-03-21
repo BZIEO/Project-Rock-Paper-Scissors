@@ -1,15 +1,16 @@
+//Variables//
 const choices = ["rock", "paper", "scissor"];
+let playerSelection = prompt("Rock, paper, or scissor?").toLowerCase();
+
+const computerSelection = computerPlay();
 
 //Function to randomly return RPS//
-const computerSelection = function computerPlay() {
+function computerPlay() {
   return choices[Math.floor(Math.random() * choices.length)];
-};
+}
 
 //Function to play//
-function play(
-  playerSelection = prompt("rock paper or scissor").toLowerCase(),
-  computerSelection
-) {
+function play(playerSelection, computerSelection) {
   if (playerSelection === computerSelection) {
     return "It's a tie! Try again to win";
   } else if (playerSelection === "rock" && computerSelection === "paper") {
@@ -26,3 +27,12 @@ function play(
     return "You won! Rock beats scissors";
   }
 }
+
+//Function to play 5 rounds//
+function game() {
+  for (let i = 0; i < 5; i++) {
+    play();
+  }
+}
+
+console.log(play(playerSelection, computerSelection));
