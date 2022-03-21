@@ -1,2 +1,3 @@
 # Project-Rock-Paper-Scissors
-JavaScript program built from scratch 
+
+Simple implementation of the grade-school classic 'rock paper scissors' using javascript built from scratch
