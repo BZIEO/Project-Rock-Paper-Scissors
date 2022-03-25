@@ -53,11 +53,11 @@ function playGame() {
     }
     //IF Statement to choose winner after tallying up the score//
     if (userWins > computerWins) {
-      decision = `Player won ${userWins} times and Computer won ${computerWins}, Player wins the game!`;
+      decision = `Player won ${userWins} times and Computer won ${computerWins} times, Player wins the game!`;
     } else if (userWins < computerWins) {
-      decision = `Player won ${userWins} times and Computer won ${computerWins}, Computer wins the game!`;
+      decision = `Player won ${userWins} times and Computer won ${computerWins} times, Computer wins the game!`;
     } else {
-      decision = `Player won ${userWins} times and Computer won ${computerWins}, Player and computer are tied!`;
+      decision = `Player won ${userWins} times and Computer won ${computerWins} times, Player and computer are tied!`;
     }
     //Tally and return outcome after every round//
     console.log(outcome);
