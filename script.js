@@ -1,8 +1,7 @@
 //Variables//
 const choices = ["rock", "paper", "scissor"];
-let computerSelection = computerPlay();
-let results = new Array();
 
+//Function to prompt user to select RPS//
 function promptUser() {
   return prompt("rock, paper, scissor, shoot...").toLowerCase();
 }
@@ -12,7 +11,7 @@ function computerPlay() {
   return choices[Math.floor(Math.random() * choices.length)];
 }
 
-//Function to play & various outcomes//
+//Function to play & the various outcomes//
 function play(playerSelection, computerSelection) {
   if (playerSelection === computerSelection) {
     return "It's a tie! Try again to win";
@@ -33,35 +32,39 @@ function play(playerSelection, computerSelection) {
   }
 }
 
-//Function to play 5 rounds//
-function game() {
+//Function to play 5 rounds + keeping score + choosing winner in the end//
+function playGame() {
+  //local variables for the function//
   let computerWins = 0;
   let userWins = 0;
   let decision;
+  // for loop to play round 5 times//
   for (i = 0; i < 5; i++) {
     let computerSelection = computerPlay();
 
     let playerSelection = promptUser();
 
     let outcome = play(playerSelection, computerSelection);
-
+    // IF Statement to tally score//
     if (outcome.includes("won")) {
       userWins++;
     } else if (outcome.includes("lost")) {
       computerWins++;
     }
-
+    //IF Statement to choose winner after tallying up the score//
     if (userWins > computerWins) {
-      decision = "Player wins the game!";
+      decision = `Player won ${userWins} times and Computer won ${computerWins}, Player wins the game!`;
     } else if (userWins < computerWins) {
-      decision = "Computer wins the game!";
+      decision = `Player won ${userWins} times and Computer won ${computerWins}, Computer wins the game!`;
     } else {
-      decision = "Player and computer have equal amount of wins, replay!";
+      decision = `Player won ${userWins} times and Computer won ${computerWins}, Player and computer are tied!`;
     }
+    //Tally and return outcome after every round//
     console.log(outcome);
     console.log("User Wins: " + userWins + ", Computer Wins: " + computerWins);
   }
+  //Return final decision//
   console.log(decision);
 }
 
-game();
+playGame();
