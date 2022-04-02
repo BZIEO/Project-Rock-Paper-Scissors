@@ -1,3 +1,3 @@
 # Project-Rock-Paper-Scissors
 
-Simple implementation of the grade-school classic 'rock paper scissors' using javascript built from scratch
+Simple implementation of the grade-school classic 'rock paper scissors' using javascript 
