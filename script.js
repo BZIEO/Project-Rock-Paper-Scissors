@@ -66,5 +66,3 @@ function playGame() {
   //Return final decision//
   console.log(decision);
 }
-
-playGame();
