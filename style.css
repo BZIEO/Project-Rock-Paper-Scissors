@@ -27,9 +27,6 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: auto;
-  width: auto;
-  height: auto;
   margin-top: 20px;
   align-items: center;
   outline: dashed 10px white;
@@ -37,7 +34,7 @@ header {
 
 button {
   font-family: "Press Start 2P", sans-serif;
-  padding: 10px;
+  padding: 8px;
   width: 150px;
   height: 150px;
   margin: auto;
@@ -54,6 +51,9 @@ button:hover {
 
 .results,
 .score {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 10px;
   text-align: center;
   margin: auto;
@@ -66,5 +66,33 @@ button:hover {
   flex-direction: column;
 
   margin: auto;
-  width: 500px;
+  width: auto;
+}
+
+@media screen and (max-width: 390px) {
+  html,
+  body {
+    margin: auto;
+    width: auto;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    align-items: center;
+  }
+  button {
+    padding: 6px;
+    width: 115px;
+    height: 115px;
+  }
+  .results,
+  .score {
+    font-size: 14px;
+  }
+
+  .content {
+    margin: auto;
+    width: auto;
+    align-items: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
 }
