@@ -80,9 +80,11 @@ button:hover {
     align-items: center;
   }
   button {
-    padding: 10px;
-    width: 120px;
-    height: 120px;
+    font-size: 12px;
+    padding: 8px;
+    width: 110px;
+    height: 110px;
+    gap: 10px;
   }
   .results,
   .score {
@@ -103,5 +105,13 @@ button:hover {
     margin-top: 20px;
     align-items: center;
     outline: dashed 6px white;
+  }
+
+  .container {
+    margin: 2px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
