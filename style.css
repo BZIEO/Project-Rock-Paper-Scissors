@@ -21,6 +21,7 @@ header {
 .content {
   margin: auto;
   width: 540px;
+  height: auto;
   display: flex;
   padding: 10px;
   flex-direction: column;
@@ -57,7 +58,7 @@ button:hover {
   text-align: center;
   margin: auto;
   width: auto;
-  height: 200px;
+  height: 150px;
 }
 
 .txtcontainer {
