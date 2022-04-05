@@ -29,7 +29,7 @@ header {
   align-items: center;
   margin-top: 20px;
   align-items: center;
-  outline: dashed 10px white;
+  outline: dashed 8px white;
 }
 
 button {
@@ -38,8 +38,8 @@ button {
   width: 150px;
   height: 150px;
   margin: auto;
-  border: dashed 2px white;
-  background-color: white;
+  border: dashed 2px black;
+  outline: dashed 4px black;
   color: black;
   margin-bottom: 30px;
   transition: all 0.05s;
@@ -93,6 +93,7 @@ button:hover {
   .content {
     margin: auto;
     width: auto;
+    height: auto;
     align-items: center;
     overflow-x: hidden;
     overflow-y: hidden;
