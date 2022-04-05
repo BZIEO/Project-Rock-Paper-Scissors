@@ -57,13 +57,13 @@ function logText(e) {
   para1.textContent =
     "User wins: " + userWins + ", Computer wins: " + computerWins;
   if (computerWins === 5) {
-    para1.textContent = "Computer has 5 points, computer wins!";
-    document.querySelector(".content").style.backgroundColor = "red";
+    // para1.textContent = "Computer has 5 points, computer wins!";
+    // document.querySelector(".content").style.backgroundColor = "red";
     userWins = 0;
     computerWins = 0;
   } else if (userWins === 5) {
     para1.textContent = "User has 5 points, user wins!";
-    document.querySelector(".content").style.backgroundColor = "Green";
+    // document.querySelector(".content").style.backgroundColor = "Green";
     userWins = 0;
     computerWins = 0;
   }
