@@ -29,7 +29,8 @@ header {
   justify-content: center;
   align-items: center;
   margin: auto;
-  width: 60%;
+  width: 90%;
+  height: auto;
   margin-top: 20px;
   align-items: center;
   outline: dashed 10px white;
