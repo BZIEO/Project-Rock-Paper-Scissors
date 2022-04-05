@@ -35,6 +35,7 @@ header {
 }
 
 button {
+  font-family: "Press Start 2P", sans-serif;
   padding: 10px;
   width: 150px;
   height: 150px;
