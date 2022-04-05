@@ -66,39 +66,3 @@ function logText(e) {
     computerWins = 0;
   }
 }
-
-// //Function to prompt user to select RPS//
-// function promptUser() {
-//   return prompt("rock, paper, scissor, shoot...").toLowerCase();
-// }
-
-// //Function to play 5 rounds + keeping score + choosing winner in the end//
-// function playGame() {
-//   //local variables for the function//
-//   let computerWins = 0;
-//   let userWins = 0;
-//   let decision;
-//   // for loop to play round 5 times//
-//   for (i = 0; i < 5; i++) {
-//     let outcome = play(playerSelection, computerSelection);
-//     // IF Statement to tally score//
-//     if (outcome.includes("won")) {
-//       userWins++;
-//     } else if (outcome.includes("lost")) {
-//       computerWins++;
-//     }
-//     //IF Statement to choose winner after tallying up the score//
-//     if (userWins > computerWins) {
-//       decision = `Player won ${userWins} times and Computer won ${computerWins} times, Player wins the game!`;
-//     } else if (userWins < computerWins) {
-//       decision = `Player won ${userWins} times and Computer won ${computerWins} times, Computer wins the game!`;
-//     } else {
-//       decision = `Player won ${userWins} times and Computer won ${computerWins} times, Player and computer are tied!`;
-//     }
-//     //Tally and return outcome after every round//
-//     console.log(outcome);
-//     console.log("User Wins: " + userWins + ", Computer Wins: " + computerWins);
-//   }
-//   //Return final decision//
-//   console.log(decision);
-// }
