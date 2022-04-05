@@ -38,7 +38,7 @@ button {
   width: 150px;
   height: 150px;
   margin: auto;
-  border: 2px solid black;
+  border: dashed 2px white;
   background-color: white;
   color: black;
   margin-bottom: 30px;
@@ -46,7 +46,8 @@ button {
 }
 
 button:hover {
-  background-color: gray;
+  background-color: rgb(177, 177, 177);
+  border: dashed 2px white;
 }
 
 .results,
@@ -59,7 +60,7 @@ button:hover {
   text-align: center;
   margin: auto;
   width: auto;
-  height: 125px;
+  height: 150px;
 }
 
 .txtcontainer {
