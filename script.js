@@ -47,7 +47,7 @@ buttons.forEach((button) => button.addEventListener("click", logText));
 function logText(e) {
   let playerSelection = this.classList.value;
   let computerSelection = computerPlay();
-
+  document.querySelector("#choose").textContent = "";
   play(playerSelection, computerSelection);
   if (para.textContent.includes("won")) {
     userWins++;
