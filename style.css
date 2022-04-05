@@ -55,11 +55,12 @@ button:hover {
   font-size: 16px;
   display: flex;
   align-items: flex-start;
+  line-height: 2;
   justify-content: center;
   padding: 4px;
   text-align: center;
   margin: auto;
-  width: auto;
+  width: 285px;
   height: 150px;
 }
 
@@ -86,6 +87,8 @@ button:hover {
   .results,
   .score {
     font-size: 14px;
+    line-height: 1.7;
+    width: 285px;
   }
 
   .content {
@@ -100,9 +103,5 @@ button:hover {
     margin-top: 20px;
     align-items: center;
     outline: dashed 6px white;
-
-  div.container {
-    display: flex;
-    align-items: center;
   }
 }
